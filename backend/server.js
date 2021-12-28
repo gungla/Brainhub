@@ -7,6 +7,7 @@ const swaggerUi = require('swagger-ui-express')
 
 const YAML = require('yamljs')
 const swaggerConfig = YAML.load('./swagger-config.yaml')
+
 require('dotenv').config()
 
 const port = process.env.PORT || 3001
@@ -30,7 +31,7 @@ app.get('/', (req, res, next) => {
   res.send('Welcome to mongodb in node brainhub')
 })
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerConfig))
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerConfig))
 
 app.use('/users', require('./lib/api/users/userRoutes'))
 

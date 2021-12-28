@@ -38,7 +38,7 @@ Launches the test runner for the back-end with mocha, produces an istanbul repor
 ## Available API Swagger docs
 
 With the app and/or api running
-Open [http://localhost:3001/api-docs](http://localhost:3001/api-docs) to view it in the browser.
+Open [http://localhost:3001/docs](http://localhost:3001/docs) to view it in the browser.
 
 Swagger docs allow you to perform full CRUD operations
 in an easy to understand interface

@@ -26,7 +26,7 @@ export const createUserInfo = (postData) => async (dispatch) => {
     })
 
     Swal.fire({
-      position: 'top-end',
+      position: 'top-center',
       icon: 'success',
       title: 'Your event has been saved',
       showConfirmButton: false,
@@ -41,7 +41,7 @@ export const createUserInfo = (postData) => async (dispatch) => {
   } catch (error) {
 
     Swal.fire({
-      position: 'top-end',
+      position: 'top-center',
       icon: 'error',
       title: 'Oops...',
       text: 'Something went wrong!',

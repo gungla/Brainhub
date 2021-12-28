@@ -12,12 +12,15 @@ const validationSchema = Yup.object({
   date: Yup.string().required('Please, enter your date. Is required!'),
 })
 
-function UserInfo(props) {
+
+function UserInfo(props) {   
+
   return (
+
     <Formik
       initialValues={{ firstName: '', lastName: '', email: '', date: '' }}
       validationSchema={validationSchema}
-      onSubmit={(values) => {
+      onSubmit={(values, { resetForm }) => {
         const user = {
           firstName: values.firstName,
           lastName: values.lastName,
@@ -25,7 +28,9 @@ function UserInfo(props) {
           date: values.date,
         }
         props.createUserInfo(user)
+        resetForm();
       }}>
+
       {({ handleSubmit, handleChange, values, errors, touched }) => (
         <form data-testid="form" onSubmit={handleSubmit}>
           <div class="mb-3">
@@ -36,13 +41,15 @@ function UserInfo(props) {
               data-testid="firstName"
               value={values.firstName}
               onChange={handleChange} 
-              placeholder='First name'/>
+              placeholder='First name'
+              />
             {errors.firstName && touched.firstName && (
               <div className="error" data-testid="error-firstName">
                 {errors.firstName}
               </div>
             )}
           </div>
+
           <div class="mb-3">
           <input
             type="text"

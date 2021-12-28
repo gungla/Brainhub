@@ -6,6 +6,9 @@ info:
 
 servers:
   - url: 'http://localhost:3001/'
+  - url: "hhttp://localhost:3001/swagger.json"
+  - dom_id: "#swagger-ui"
+  - validatorUrl: "https://validator.swagger.io/validator"
 components:
   schemas:
     # <--- user info model --->
