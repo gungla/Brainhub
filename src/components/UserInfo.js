@@ -13,10 +13,10 @@ const validationSchema = Yup.object({
 })
 
 
-function UserInfo(props) {   
-
+function UserInfo(props) { 
+  
   return (
-
+    
     <Formik
       initialValues={{ firstName: '', lastName: '', email: '', date: '' }}
       validationSchema={validationSchema}
@@ -99,6 +99,7 @@ function UserInfo(props) {
             Save event
           </button>
         </form>
+
       )}
     </Formik>
   )
