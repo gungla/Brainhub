@@ -75,7 +75,7 @@ describe('Testing server', function () {
     chai
       .request(server)
       .put(`/users/${userinfoId}`)
-      .send({ firstName: 'updatedFirst', lastName: 'updatedLast', email: 'updated@email.com', date: '2010-10-10' })
+      .send({ firstName: 'updatedFirst', lastName: 'updatedLast', email: 'updated@email.com', date: '2021-10-10' })
       .end((err, res) => {
         assert.equal(res.status, '200')
         assert.isObject(res.body)

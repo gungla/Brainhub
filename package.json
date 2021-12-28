@@ -34,8 +34,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "server-test": "nyc mocha './services/tests.js'",
-    "api": "nodemon ./services/server.js",
+    "server-test": "nyc mocha './backend/tests.js'",
+    "api": "nodemon ./backend/server.js",
     "build": "react-scripts build",
     "test": "nyc react-scripts test",
     "test-coverage": "npm test -- --coverage --watchAll=false",
