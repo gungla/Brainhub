@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Change the example.env file to .env
 
+### `SKIP_PREFLIGHT_CHECK=true`
 ### `REACT_APP_MONGO_URL = URL to cluster mongoDB`
 ### `REACT_APP_MONGO_USER_PASSWORD = user:admin`
 
