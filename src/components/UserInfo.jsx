@@ -3,7 +3,6 @@ import { Formik } from 'formik'
 import * as Yup from 'yup'
 import { createUserInfo } from '../actions/userActions'
 import { connect } from 'react-redux'
-import './forms.css'
 
 const validationSchema = Yup.object({
   firstName: Yup.string().required('Please, enter your first name. Is required!'),
