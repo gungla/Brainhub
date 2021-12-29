@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Environment Variable
+
+Change the example.env file to .env
+
+### `REACT_APP_MONGO_URL = URL to cluster mongoDB`
+### `REACT_APP_MONGO_USER_PASSWORD = user:admin`
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -7,7 +7,7 @@ module.exports = {
       .keys({
         firstName: joi.string().required(),
         lastName: joi.string().required(),
-        email: joi.string().required(),
+        email: joi.string().email().required(),
         date: joi.string().required(),
       })
       .options({ stripUnknown: true }),

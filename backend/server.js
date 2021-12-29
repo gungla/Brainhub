@@ -28,15 +28,12 @@ app.use(cors())
 app.use(bodyParser.json())
 
 app.get('/', (req, res, next) => {
-  res.send('Welcome to mongodb in node brainhub')
+  res.send('Welcome to mongodb in node brainhub. Visit /users or /docs')
 })
-
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerConfig))
-
 app.use('/users', require('./lib/api/users/userRoutes'))
 
 app.listen(port)
-
-console.log(`Server listening on port ${port}`)
+console.log(`Server up and listening on port ${port}`)
 
 module.exports = app

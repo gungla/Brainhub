@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { fetchUsersInfo } from '../actions/userActions'
 
 class UsersInfo extends Component {
+  
   componentDidMount() {
     this.props.fetchUsersInfo()
   }
