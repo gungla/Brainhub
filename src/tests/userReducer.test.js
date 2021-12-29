@@ -2,7 +2,7 @@ import reducer from '../reducers/index'
 import * as types from '../actions/types'
 
 describe('tests reducer', () => {
-  const payload = { firstName: 'test', lastName: 'reducer', email: 'test@reducer.com', date: '2021-10-10' }
+  const payload = { firstName: 'test', lastName: 'reducer', email: 'test@reducer.com', date: '2021-12-31' }
 
   it('should return the initial state', () => {
     expect(reducer(undefined, {})).toEqual({ userinfo: { user: {}, users: [] } })

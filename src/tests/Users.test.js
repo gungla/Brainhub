@@ -11,7 +11,7 @@ const mockStore = configureStore(middlewares)
 
 describe('Users component', () => {
   it('test userinfo fields', async () => {
-    const data = [{ firstName: 'testFirst', lastName: 'testlast', email: 'email@email.com', date: '2021-10-10' }]
+    const data = [{ firstName: 'testFirst', lastName: 'testlast', email: 'email@email.com', date: '2021-31-12' }]
     let store = mockStore({
       userinfo: {
         users: data,
@@ -34,7 +34,7 @@ describe('Users component', () => {
     const email = getByText(/email@email.com/i)
     expect(email).toBeInTheDocument()
 
-    const date = getByText(/2020/i)
+    const date = getByText(/2021/i)
     expect(date).toBeInTheDocument()
   })
 })

@@ -99,11 +99,11 @@ describe('Form testing', () => {
       fireEvent.select(date)
       fireEvent.click(date, {
         target: {
-          value: '2021-08-31',
+          value: '2021-12-31',
         },
       })
     })
-    expect(date.value).equals('2021-08-31')
+    expect(date.value).equals('2021-12-31')
 
     await wait(() => {
       fireEvent.click(submit)

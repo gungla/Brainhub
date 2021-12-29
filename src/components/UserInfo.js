@@ -33,7 +33,7 @@ function UserInfo(props) {
 
       {({ handleSubmit, handleChange, values, errors, touched }) => (
         <form data-testid="form" onSubmit={handleSubmit}>
-          <div class="mb-3">
+          <div className="mb-3">
             <input
               type="text"
               name="firstName"
@@ -50,7 +50,7 @@ function UserInfo(props) {
             )}
           </div>
 
-          <div class="mb-3">
+          <div className="mb-3">
           <input
             type="text"
             name="lastName"
@@ -65,7 +65,7 @@ function UserInfo(props) {
             </div>
           )}
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
           <input
             type="email"
             name="email"
@@ -80,7 +80,7 @@ function UserInfo(props) {
             </div>
           )}
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
           <input
             type="date"
             name="date"
