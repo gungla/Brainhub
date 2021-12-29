@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Environment Variable
+## Set Environment Variables
 
 Change the example.env file to .env
 
